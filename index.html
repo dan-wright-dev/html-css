@@ -1,21 +1,103 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <title>My first page</title>
-<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Wright | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <h1>Hello, world and some other text</h1>
+  <!-- NAVIGATION BAR -->
+  <nav class="main-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <p>This is my first web page.</p>
+  <!-- HEADER -->
+  <header class="main-header">
+    <h1>Hello, I'm Daniel Wright</h1>
+    <p>Aspiring Data Analyst, Engineer, Developer & Tech Enthusiast</p>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Welcome! This is my <strong>first official web page</strong>. I am currently learning the fundamentals of frontend development, experimenting with <em>HTML structural semantics</em>, and getting a handle on modern layout design.</p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2>My Coding Journey</h2>
+      <p>Here are the core technologies I am exploring right now:</p>
+      <ul>
+        <li><strong>HTML5</strong> - For structuring web content</li>
+        <li><strong>CSS3</strong> - For styling, layouts, and animations</li>
+        <li><strong>JavaScript</strong> - For making pages interactive</li>
+      </ul>
+
+      <h3>Technical Tool Proficiency</h3>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Tools / Languages</th>
+            <th>Skill Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data Analysis</td>
+            <td>SQL, Excel, Python</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>HTML5, CSS3, VS Code</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Featured Elements</h2>
+      <p>Below is a demonstration of structural elements and active components:</p>
+      <p>
+        <a href="https://developer.mozilla.org" target="_blank" class="btn">Explore MDN Docs</a>
+      </p>
+      <h3>Sample Image Integration</h3>
+      <!-- FIXED: Replaced broken unsplash link with a valid direct image URL -->
+      <img src="https://unsplash.com" alt="Code displaying on a laptop screen" class="project-img">
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="8270dfe2-f4ab-460c-bec9-e65388f0ab63">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="btn contact-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Daniel Wright. Built from scratch with VS Code.</p>
+  </footer>
 
 </body>
-
 </html>
